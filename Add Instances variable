@@ -1,0 +1,23 @@
+import java.util.*;
+class Add{
+	int firstnum,secondnum;
+	int result;
+	int add(int firstnum,int secondnum){
+		return(firstnum+secondnum);
+	}
+	void display(int result){
+		System.out.println("Result:"+result);
+	}
+	void takeInput(){
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter 2 nos:");
+		firstnum=sc.nextInt();
+		secondnum=sc.nextInt();
+		result=add(firstnum,secondnum);
+		display(result);
+	}
+	public static void main(String[] args) {
+		Add aa=new Add();
+		aa.takeInput();
+	}
+}
